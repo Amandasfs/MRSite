@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Glow para textos dourados, caso queira usar futuramente */
+.gold-gradient {
+  background: linear-gradient(
+    90deg,
+    #b08d3c,    /* dourado mais escuro */
+    #d4af37,    /* dourado clássico */
+    #f4e2a4,    /* amarelo claro para brilho */
+    #b08d3c     /* volta para dourado mais escuro */
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.border-gold {
+  border: 1px solid rgba(176, 141, 60, 0.6); /* #b08d3c com transparência */
+}
+.text-gold-glow {
+  color: #b08d3c;
+  text-shadow:
+    0 0 4px #b08d3c,
+    0 0 10px #f4e2a4,
+    0 0 20px #d4af37;
+}
