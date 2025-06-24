@@ -4,8 +4,7 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="relative py-16 px-6 bg-surface text-light-textPrimary dark:bg-dark-background dark:text-dark-textPrimary overflow-hidden"
-      style={{ minHeight: "400px" }}
+      className="relative px-6 bg-surface text-light-textPrimary dark:bg-dark-background dark:text-dark-textPrimary overflow-hidden min-h-screen flex flex-col justify-center"
     >
       {/* SVG preenchendo todo o fundo */}
       <div
@@ -20,7 +19,7 @@ export default function AboutSection() {
           preserveAspectRatio="none"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="opacity-50 dark:opacity-30"
+          className="opacity-20 dark:opacity-20"
         >
           {[...Array(20)].map((_, i) => {
             const offset = i * 25;
@@ -59,7 +58,7 @@ export default function AboutSection() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
-        className="relative border border-[#0a1f32] p-4 sm:p-5 rounded-md shadow-sm bg-white/60 dark:bg-black/30"
+        className="relative border border-[#0a1f32] p-4 sm:p-5 rounded-md shadow-sm bg-white/60 dark:bg-black/30 max-w-4xl mx-auto"
         style={{ zIndex: 1 }}
       >
         {/* Título */}

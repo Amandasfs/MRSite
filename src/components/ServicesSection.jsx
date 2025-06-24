@@ -4,12 +4,61 @@ import { motion } from 'framer-motion';
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="py-20 px-6 text-light-textPrimary">
-      <h3 className="text-4xl font-extrabold mb-12 text-center text-primary">
+    <section
+      id="services"
+      className="relative py-20 px-6 text-light-textPrimary min-h-screen flex flex-col justify-center"
+    >
+       {/* SVG preenchendo todo o fundo */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 pointer-events-none"
+        style={{ zIndex: 0 }}
+      >
+        <svg
+          width="100%"
+          height="100%"
+          viewBox="0 0 500 500"
+          preserveAspectRatio="none"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="opacity-20 dark:opacity-20"
+        >
+          {[...Array(20)].map((_, i) => {
+            const offset = i * 25;
+            return (
+              <line
+                key={i}
+                x1={offset}
+                y1="0"
+                x2="0"
+                y2={offset}
+                stroke="#b78f00"
+                strokeWidth="2"
+              />
+            );
+          })}
+          {[...Array(20)].map((_, i) => {
+            const offset = 25 * i;
+            return (
+              <line
+                key={i + 20}
+                x1="500"
+                y1={offset}
+                x2={500 - offset}
+                y2="500"
+                stroke="#b78f00"
+                strokeWidth="2"
+              />
+            );
+          })}
+        </svg>
+      </div>
+
+      <h3 className="text-4xl font-extrabold mb-12 text-center text-primary relative z-10">
         Nossos Serviços
       </h3>
 
-      <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8 items-stretch">
+      <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8 items-stretch relative z-10">
         {/* Serviços Administrativos */}
         <motion.div
           whileHover={{ scale: 1.05 }}
