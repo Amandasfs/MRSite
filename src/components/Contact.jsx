@@ -35,7 +35,7 @@ export default function Contact() {
   return (
   <section
     id="contact"
-    className="relative py-16 px-4 sm:px-6 lg:px-8 bg-surface dark:bg-dark-background text-light-textPrimary dark:text-light-textPrimary min-h-screen flex flex-col justify-center"
+    className="bg-white relative py-16 px-4 sm:px-6 lg:px-8 bg-surface text-light-textPrimary dark:text-light-textPrimary min-h-screen flex flex-col justify-center"
   >
       {/* SVG preenchendo todo o fundo */}
       <div

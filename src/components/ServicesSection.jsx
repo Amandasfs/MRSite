@@ -6,7 +6,7 @@ export default function ServicesSection() {
   return (
     <section
       id="services"
-      className="relative py-20 px-6 text-light-textPrimary min-h-screen flex flex-col justify-center"
+      className="bg-white relative py-20 px-6 text-light-textPrimary min-h-screen flex flex-col justify-center"
     >
        {/* SVG preenchendo todo o fundo */}
       <div

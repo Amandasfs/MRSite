@@ -4,7 +4,7 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="relative px-6 bg-surface text-light-textPrimary dark:bg-dark-background dark:text-dark-textPrimary overflow-hidden min-h-screen flex flex-col justify-center"
+      className="bg-white relative px-6 bg-surface text-light-textPrimary dark:bg-dark-background dark:text-dark-textPrimary overflow-hidden min-h-screen flex flex-col justify-center"
     >
       {/* SVG preenchendo todo o fundo */}
       <div
